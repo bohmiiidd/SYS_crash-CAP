@@ -71,7 +71,7 @@ Author
     Feel free to open issues or contribute via pull requests.
 
 <img width="1190" height="678" alt="image" src="https://github.com/user-attachments/assets/00e75c29-7de8-4dff-9d2f-8fed2aaff162" />
-Contribution
+
 
 Contributions, bug reports, and feature requests are welcome! Please fork the repository and create a pull request.
 
