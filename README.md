@@ -6,15 +6,15 @@
 
 ## Features
 
-- Display detailed memory and CPU usage statistics
-- Show memory usage aggregated by user
-- List top memory-consuming processes and suggest cleanup
-- Kill processes gracefully or forcefully by PID
-- Monitor memory usage continuously in the background with desktop notifications
-- Display and clean various system and user caches safely
-- Launch a process monitor in a new terminal window
-- Interactive console with colored prompts, animations, and progress spinners
-
+✅ Display detailed memory and CPU usage statistics  
+✅ Show memory usage aggregated by user  
+✅ List top memory-consuming processes and suggest cleanup  
+✅ Kill processes gracefully or forcefully by PID  
+✅ Monitor memory usage continuously in the background with desktop notifications *(non-root only)*  
+✅ Display and clean system and user caches safely  
+✅ Launch a live process monitor in a new terminal window  
+✅ Beautiful animated UI with colored prompts, progress spinners, and alerts  
+✅ Detect system freezes before they occur by tracking memory thresholds  
 ---
 
 ## Installation
