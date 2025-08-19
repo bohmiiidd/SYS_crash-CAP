@@ -14,8 +14,8 @@ from rich import box
 from rich.table import Table
 from pathlib import Path
 import shutil
-from swap_manager import SwapManager, SwapFileManager, CacheCleaner
-from runtime_pid import InteractiveMonitor
+from .swap_manager import SwapManager, SwapFileManager, CacheCleaner
+from .runtime_pid import InteractiveMonitor
 import platform
 import getpass
 import sys
