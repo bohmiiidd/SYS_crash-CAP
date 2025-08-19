@@ -1,12 +1,6 @@
 #!/usr/bin/env python3
 """
 Project runner.
-
-Usage examples:
-  python run.py
-  python run.py --config config.json --debug
-  python run.py pid
-  python run.py swap status
 """
 
 from __future__ import annotations
