@@ -53,7 +53,6 @@ def setup_logging(debug: bool = False, quiet: bool = False) -> None:
 def _signal_handler(signum, frame) -> None:  # type: ignore[no-untyped-def]
     names = {signal.SIGINT: "SIGINT", signal.SIGTERM: "SIGTERM"}
     LOG.info("Received %s, shutting down gracefully...", names.get(signum, str(signum)))
-    # If you have cleanup hooks, call them here.
     sys.exit(0)
 
 
@@ -196,14 +195,14 @@ def cmd_run(args: argparse.Namespace) -> int:
     if not fn:
         return 3
 
-    # Try calling with the right signature.
+    # calling with the right signature.
     try:
         if hint == "main()":
             fn()  # type: ignore[misc]
         else:
             fn(cfg)  # type: ignore[misc]
     except TypeError as te:
-        # In case the callable uses a different signature, try both ways.
+        # In case the callable uses a different signature.
         LOG.debug("Callable signature mismatch (%s). Attempting fallback calls.", te)
         try:
             fn()  # type: ignore[misc]
