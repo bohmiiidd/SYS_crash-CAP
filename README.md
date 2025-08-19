@@ -1,77 +1,107 @@
-# CRASH CAP — Memory Crash Capture & Control Panel
+```markdown
+# 🚨 CRASH CAP — System Memory Toolkit
 
-🚨 **CRASH CAP** is a terminal-based tool to monitor and manage system memory usage, processes, and caches on Linux systems. It provides real-time stats, alerts on high memory usage, process management commands, and easy cache cleanup — all with an interactive colorful console interface
-
----
-
-## Features
-
-✅ Display detailed memory and CPU usage statistics  
-✅ Show memory usage aggregated by user  
-✅ List top memory-consuming processes and suggest cleanup  
-✅ Kill processes gracefully or forcefully by PID  
-✅ Monitor memory usage continuously in the background with desktop notifications *(non-root only)*  
-✅ Display and clean system and user caches safely  
-✅ Launch a live process monitor in a new terminal window  
-✅ Beautiful animated UI with colored prompts, progress spinners, and alerts  
-✅ Detect system freezes before they occur by tracking memory thresholds  
----
-
-## Installation
-
-1. Clone this repository:
-
-   ```bash
-   git clone https://github.com/yourusername/crash-cap.git
-   cd crash-cap
-2. install requirements packages and run :
-   ```bash
-   pip3 install requirements.txt
-   python3 crashcap.py
-   ```
-3. (Optional) Adjust settings in config.json for memory threshold and check interval.
-Configuration
-
-You can customize memory monitoring thresholds and intervals in config.json:
-```json
-{
-  "memory_threshold": 80,
-  "check_interval": 5
-}
 ```
-memory_threshold: Percentage of memory usage to trigger alerts
 
-check_interval: Seconds between memory usage checks when monitoring
+CRASH CAP is a **Linux memory and process monitoring toolkit** designed to help users track system resources, manage processes, and control swap space efficiently.  
 
-Requirements
+---
 
-    Python 3.7+
+## 🔹 Features
 
-    psutil
+### **System Monitoring**
+- `mu` — Show memory, CPU, and disk stats  
+- `top` — Show top processes by CPU/Memory  
+- `users` — Show memory usage by user  
+- `swap` — Swap space management  
 
-    rich
+### **Process Management**
+- `pm` — Open process monitor window  
+- `up` — List current user's processes  
+- `mup <pid>` — Show memory usage of a process  
+- `kill <pid>` — Kill process (`--force` for SIGKILL)  
 
-    Linux OS (requires /proc filesystem for some functions)
+### **Maintenance**
+- `clean` — Clean system caches  
+- `monitor` — Start/stop memory monitor  
+- `clear` — Clear screen  
+- `help` — Show help menu  
+- `q` — Quit  
 
-    notify-send command available for desktop notifications (usually via libnotify-bin package)
-Notes
+---
 
-    Some cache cleanup operations require root permissions. Run the script with sudo if you encounter permission errors.
+## 🔹 Swap Management
 
-    The process monitor launches in xterm — ensure xterm is installed or modify the script to use your preferred terminal emulator.
-License
+```
 
-This project is licensed under the MIT License. See the LICENSE file for details.
-Author
+╭───────────────────────────────────────────────────────────────────────╮
+│ 🔷 Swap Management Console                                            │
+╰───────────────────────────────────────────────────────────────────────╯
 
-    Developed by Ahmed Abd
+````
 
-    GitHub: bohmiiidd
+**Swap Commands:**
+- `check` — Check current swap status  
+- `sp` — Create swap partition (interactive)  
+- `sf` — Create swap file (interactive)  
+- `rm` — Remove swap file  
+- `help` — Show swap help  
+- `q` — Return to main menu  
 
-    Feel free to open issues or contribute via pull requests.
+---
 
-<img width="1190" height="678" alt="image" src="https://github.com/user-attachments/assets/00e75c29-7de8-4dff-9d2f-8fed2aaff162" />
+## 🖥️ Installation
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/your-username/CRASH_CAP.git
+cd CRASH_CAP
+````
+
+2. Install dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+3. Run the toolkit:
+
+```bash
+python3 run.py
+```
+
+---
+
+## ⚙️ Configuration
+
+* `config.json` contains runtime settings such as:
+
+  * `memory_threshold` — Memory usage limit before alerts
+  * `check_interval` — Interval (seconds) for monitoring
+
+---
+
+## 🐾 Author
+
+* **b7z** — Original creator
+* ASCII art mascot included for style:
+
+```
+    /\_/\           ___
+   = o_o =_______    \ \  -bz7-
+    __^      __(  \.__) )
+(@)<_____>__(_____)_____/
+```
+
+---
+
+## 📄 License
+
+This project is licensed under the **MIT License** — see [LICENSE.md](LICENSE.md) for details.
 
 
-Contributions, bug reports, and feature requests are welcome! Please fork the repository and create a pull request.
+
+> CRASH CAP makes system monitoring and memory management **fast, interactive, and visual** for Linux users.
+> <img width="1365" height="649" alt="image" src="https://github.com/user-attachments/assets/6048e087-7216-47d3-9a81-0483fbdbba26" />
 
