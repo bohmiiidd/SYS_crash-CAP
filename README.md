@@ -1,13 +1,12 @@
 ```markdown
 # 🚨 CRASH CAP — System Memory Toolkit
-```
+
     /\_/\           ___
    = o_o =_______    \ \  -bz7-
     __^      __(  \.__) )
 (@)<_____>__(_____)_____/
 ```
 
-```
 
 CRASH CAP is a **Linux memory and process monitoring toolkit** designed to help users track system resources, manage processes, and control swap space efficiently.  
 
