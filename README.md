@@ -1,5 +1,11 @@
 ```markdown
 # 🚨 CRASH CAP — System Memory Toolkit
+```
+    /\_/\           ___
+   = o_o =_______    \ \  -bz7-
+    __^      __(  \.__) )
+(@)<_____>__(_____)_____/
+```
 
 ```
 
@@ -79,20 +85,6 @@ python3 run.py
 
   * `memory_threshold` — Memory usage limit before alerts
   * `check_interval` — Interval (seconds) for monitoring
-
----
-
-## 🐾 Author
-
-* **b7z** — Original creator
-* ASCII art mascot included for style:
-
-```
-    /\_/\           ___
-   = o_o =_______    \ \  -bz7-
-    __^      __(  \.__) )
-(@)<_____>__(_____)_____/
-```
 
 ---
 
