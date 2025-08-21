@@ -61,8 +61,8 @@ CRASH CAP is a **Linux memory and process monitoring toolkit** designed to help 
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/your-username/CRASH_CAP.git
-cd CRASH_CAP
+git clonehttps://github.com/bohmiiidd/SYS_crash-CAP.git
+cd SYS_crash-CAP
 ````
 
 2. Install dependencies:
@@ -74,7 +74,7 @@ pip install -r requirements.txt
 3. Run the toolkit:
 
 ```bash
-python3 run.py
+python3 CrashCap.py
 ```
 
 ---
